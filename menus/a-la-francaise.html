@@ -8,95 +8,105 @@
     <title>À la française</title>
 </head>
 <body>
-    <header>
-        <a href="/index.html">
-            <img src="../img/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
-            <i class="fas fa-arrow-left"></i>
+    <!-- Header de page comprenant le logo et une flèche retour -->
+    <header class="header--pg">
+        <a class="header--pg__redirection" href="/index.html">
+            <img class="header__logo" src="../img/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
+            <i class="fas fa-arrow-left header--pg__icone"></i>
         </a>
     </header>
-
-    <img src="../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image du troisième restaurant">
-
+    <!-- Image d'en-tête du restaurant -->
+    <img class="imgpg" src="../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image du troisième restaurant">
+    <!-- Partie principale du site -->
     <main>
-        <section>
-            <div>
-                <h1>À la française</h1>
-                <i class="far fa-heart"></i>
+         <!-- Conteneur du menu de page -->
+        <section class="menupg">
+            <!-- Conteneur de l'en-tête du menu (titre du restaurant et icône coeur) -->
+            <div class="menupg__conteneur">
+                <h1 class="menupg__titre">À la française</h1>
+                <i class="far fa-heart menupg__coeur"></i>
             </div>
-            <section>
-                <h2>Entrées</h2>
-                <div>
-                    <h3>Tartare de poulpe acidulé</h3>
-                    <p>Aux zestes d'orange</p>
-                    <div><strong>25€</strong></div>
+            <!-- Les entrées -->
+            <section class="section">
+                <h2 class="section__titre">Entrées</h2>
+                <!-- Choix des entrées (les divs) -->
+                <div class="section__choix">
+                    <h3 class="choix__titre">Tartare de poulpe acidulé</h3>
+                    <p class="choix__description">Aux zestes d'orange</p>
+                    <div class="choix__prix"><strong>25€</strong></div>
                 </div>
-                <div>
-                    <h3>Velouté de légumes d'antan</h3>
-                    <p>Carotte, panais, topinambour</p>
-                    <div><strong>35€</strong></div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Velouté de légumes d'antan</h3>
+                    <p class="choix__description">Carotte, panais, topinambour</p>
+                    <div class="choix__prix"><strong>35€</strong></div>
                 </div>
-                <div>
-                    <h3>Soupe à l'oignon</h3>
-                    <p>Revisitée</p>
-                    <div><strong>20€</strong></div>
-                </div>
-            </section>
-            <section>
-                <h2>Plats</h2>
-                <div>
-                    <h3>Coquilles Saint-Jacques</h3>
-                    <p>Accompagnées d'une purée de panais</p>
-                    <div><strong>40€</strong></div>
-                </div>
-                <div>
-                    <h3>Magret de canard</h3>
-                    <p>Et parmentier de pommes de terre</p>
-                    <div><strong>35€</strong></div>
-                </div>
-                <div>
-                    <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                    <p>Sur son lit de gnocchis aux légumes</p>
-                    <div><strong>44€</strong></div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Soupe à l'oignon</h3>
+                    <p class="choix__description">Revisitée</p>
+                    <div class="choix__prix"><strong>20€</strong></div>
                 </div>
             </section>
-            <section>
-                <h2>Desserts</h2>
-                <div>
-                    <h3>Pétales de violettes glacés</h3>
-                    <p>Et purée de noisettes</p>
-                    <div><strong>18€</strong></div>
+            <!-- Les plats -->
+            <section class="section">
+                <h2 class="section__titre">Plats</h2>
+                <!-- Choix des plats (les divs) -->
+                <div class="section__choix">
+                    <h3 class="choix__titre">Coquilles Saint-Jacques</h3>
+                    <p class="choix__description">Accompagnées d'une purée de panais</p>
+                    <div class="choix__prix"><strong>40€</strong></div>
                 </div>
-                <div>
-                    <h3>Fondant au chocolat</h3>
-                    <p>Revisité</p>
-                    <div><strong>22€</strong></div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Magret de canard</h3>
+                    <p class="choix__description">Et parmentier de pommes de terre</p>
+                    <div class="choix__prix"><strong>35€</strong></div>
                 </div>
-                <div>
-                    <h3>Millefeuille croustillant</h3>
-                    <p>Myrtilles et pâte d’amande</p>
-                    <div><strong>23€</strong></div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Pigeonneau d’Ille-et-Vilaine</h3>
+                    <p class="choix__description">Sur son lit de gnocchis aux légumes</p>
+                    <div class="choix__prix"><strong>44€</strong></div>
                 </div>
             </section>
-            <button>Commander</button>
+             <!-- Les desserts -->
+            <section class="section">
+                <h2 class="section__titre">Desserts</h2>
+                 <!-- Choix des desserts (les divs) -->
+                <div class="section__choix">
+                    <h3 class="choix__titre">Pétales de violettes glacés</h3>
+                    <p class="choix__description">Et purée de noisettes</p>
+                    <div class="choix__prix"><strong>18€</strong></div>
+                </div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Fondant au chocolat</h3>
+                    <p class="choix__description">Revisité</p>
+                    <div class="choix__prix"><strong>22€</strong></div>
+                </div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Millefeuille croustillant</h3>
+                    <p class="choix__description">Myrtilles et pâte d’amande</p>
+                    <div class="choix__prix"><strong>23€</strong></div>
+                </div>
+            </section>
+            <!-- Validation du menu avec le bouton "Commander" -->
+            <button class="menupg__btn">Commander</button>
         </section>
     </main>
-
-    <footer>
-        <h4>Ohmyfood</h4>
-        <ul>
-            <li>
-                <i class="fas fa-utensils"></i>
-                <a href="#">Proposer un restaurant</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <h4 class="footer__titre">Ohmyfood</h4>
+        <ul class="footer__liste">
+            <li class="liste__lien">
+                <i class="fas fa-utensils lien__icone"></i>
+                <a class="lien__direction" href="#">Proposer un restaurant</a>
             </li>
-            <li>
-                <i class="fas fa-hands-helping"></i>
-                <a href="#">Devenir partenaire</a>
+            <li class="liste__lien">
+                <i class="fas fa-hands-helping lien__icone"></i>
+                <a class="lien__direction" href="#">Devenir partenaire</a>
             </li>
-            <li>
-                <a href="#">Mentions légales</a>
+            <li class="liste__lien">
+                <a class="lien__direction" href="#">Mentions légales</a>
             </li>
-            <li>
-                <a href="mailto:xxx@xxx.xx">Contact</a>
+            <li class="liste__lien">
+                <a class="lien__direction" href="mailto:xxx@xxx.xx">Contact</a>
             </li>
         </ul>
     </footer>
