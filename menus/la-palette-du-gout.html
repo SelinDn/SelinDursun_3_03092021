@@ -8,95 +8,105 @@
     <title>La palette du goût</title>
 </head>
 <body>
-    <header>
-        <a href="/index.html">
-            <img src="../img/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
-            <i class="fas fa-arrow-left"></i>
+    <!-- Header de page comprenant le logo et une flèche retour -->
+    <header class="header--pg">
+        <a class="header--pg__redirection" href="/index.html">
+            <img class="header__logo" src="../img/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
+            <i class="fas fa-arrow-left header--pg__icone"></i>
         </a>
     </header>
-
-    <img src="../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant">
-
+    <!-- Image d'en-tête du restaurant -->
+    <img class="imgpg" src="../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant">
+    <!-- Partie principale du site -->
     <main>
-        <section>
-            <div>
-                <h1>La palette du goût</h1>
-                <i class="far fa-heart"></i>
+        <!-- Conteneur du menu de page -->
+        <section class="menupg">
+            <!-- Conteneur de l'en-tête du menu (titre du restaurant et icône coeur) -->
+            <div class="menupg__conteneur">
+                <h1 class="menupg__titre">La palette du goût</h1>
+                <i class="far fa-heart menupg__coeur"></i>
             </div>
-            <section>
-                <h2>Entrées</h2>
-                <div>
-                    <h3>Fricassée d'escargot</h3>
-                    <p>Au piment d'espelette</p>
-                    <div><strong>25€</strong></div>
+            <!-- Les entrées -->
+            <section class="section">
+                <h2 class="section__titre">Entrées</h2>
+                <!-- Choix des entrées (les divs) -->
+                <div class="section__choix">
+                    <h3 class="choix__titre">Fricassée d'escargot</h3>
+                    <p class="choix__description">Au piment d'espelette</p>
+                    <div class="choix__prix"><strong>25€</strong></div>
                 </div>
-                <div>
-                    <h3>Foie gras de canard mi-cuit</h3>
-                    <p>Et ses copeaux de truffe noire</p>
-                    <div><strong>35€</strong></div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Foie gras de canard mi-cuit</h3>
+                    <p class="choix__description">Et ses copeaux de truffe noire</p>
+                    <div class="choix__prix"><strong>35€</strong></div>
                 </div>
-                <div>
-                    <h3>Oeuf au plat</h3>
-                    <p>Assaisonné à la truffe sur lit de caviar</p>
-                    <div><strong>20€</strong></div>
-                </div>
-            </section>
-            <section>
-                <h2>Plats</h2>
-                <div>
-                    <h3>Filet de boeuf aux herbes</h3>
-                    <p>Accompagné de sa ribambelle de légumes</p>
-                    <div><strong>40€</strong></div>
-                </div>
-                <div>
-                    <h3>Parmentier de queue de boeuf</h3>
-                    <p>À la truffe noire sur sa purée de panais</p>
-                    <div><strong>35€</strong></div>
-                </div>
-                <div>
-                    <h3>Filet de turbot</h3>
-                    <p>Aux agrumes</p>
-                    <div><strong>44€</strong></div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Oeuf au plat</h3>
+                    <p class="choix__description">Assaisonné à la truffe sur lit de caviar</p>
+                    <div class="choix__prix"><strong>20€</strong></div>
                 </div>
             </section>
-            <section>
-                <h2>Desserts</h2>
-                <div>
-                    <h3>Paris-Brest</h3>
-                    <p>Revisité</p>
-                    <div><strong>18€</strong></div>
+            <!-- Les plats -->
+            <section class="section">
+                <h2 class="section__titre">Plats</h2>
+                <!-- Choix des plats (les divs) -->
+                <div class="section__choix">
+                    <h3 class="choix__titre">Filet de boeuf aux herbes</h3>
+                    <p class="choix__description">Accompagné de sa ribambelle de légumes</p>
+                    <div class="choix__prix"><strong>40€</strong></div>
                 </div>
-                <div>
-                    <h3>Macaron au chocolat d'exception</h3>
-                    <p>Et glace à la vanille de Madagascar</p>
-                    <div><strong>22€</strong></div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Parmentier de queue de boeuf</h3>
+                    <p class="choix__description">À la truffe noire sur sa purée de panais</p>
+                    <div class="choix__prix"><strong>35€</strong></div>
                 </div>
-                <div>
-                    <h3>Mousse au chocolat</h3>
-                    <p>Au piment d'Espelette et à la truffe noire</p>
-                    <div><strong>23€</strong></div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Filet de turbot</h3>
+                    <p class="choix__description">Aux agrumes</p>
+                    <div class="choix__prix"><strong>44€</strong></div>
                 </div>
             </section>
-            <button>Commander</button>
+            <!-- Les desserts -->
+            <section class="section">
+                <h2 class="section__titre">Desserts</h2>
+                <!-- Choix des desserts (les divs) -->
+                <div class="section__choix">
+                    <h3 class="choix__titre">Paris-Brest</h3>
+                    <p class="choix__description">Revisité</p>
+                    <div class="choix__prix"><strong>18€</strong></div>
+                </div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Macaron au chocolat d'exception</h3>
+                    <p class="choix__description">Et glace à la vanille de Madagascar</p>
+                    <div class="choix__prix"><strong>22€</strong></div>
+                </div>
+                <div class="section__choix">
+                    <h3 class="choix__titre">Mousse au chocolat</h3>
+                    <p class="choix__description">Au piment d'Espelette et à la truffe noire</p>
+                    <div class="choix__prix"><strong>23€</strong></div>
+                </div>
+            </section>
+            <!-- Validation du menu avec le bouton "Commander" -->
+            <button class="menupg__btn">Commander</button>
         </section>
     </main>
-
-    <footer>
-        <h4>Ohmyfood</h4>
-        <ul>
-            <li>
-                <i class="fas fa-utensils"></i>
-                <a href="#">Proposer un restaurant</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <h4 class="footer__titre">Ohmyfood</h4>
+        <ul class="footer__liste">
+            <li class="liste__lien">
+                <i class="fas fa-utensils lien__icone"></i>
+                <a class="lien__direction" href="#">Proposer un restaurant</a>
+            </li>
+            <li class="liste__lien">
+                <i class="fas fa-hands-helping lien__icone"></i>
+                <a class="lien__direction" href="#">Devenir partenaire</a>
+            </li>
+            <li class="liste__lien">
+                <a class="lien__direction" href="#">Mentions légales</a>
             </li>
             <li>
-                <i class="fas fa-hands-helping"></i>
-                <a href="#">Devenir partenaire</a>
-            </li>
-            <li>
-                <a href="#">Mentions légales</a>
-            </li>
-            <li>
-                <a href="mailto:xxx@xxx.xx">Contact</a>
+                <a class="lien__direction" href="mailto:xxx@xxx.xx">Contact</a>
             </li>
         </ul>
     </footer>
