@@ -4,6 +4,11 @@ body {
   font-family: roboto, shrikhand, sans-serif, Arial;
 }
 
+a {
+  text-decoration: inherit;
+  color: black;
+}
+
 .header {
   text-align: center;
   margin-top: 1rem;
@@ -17,6 +22,7 @@ body {
 .headerlieu__icone {
   padding-top: 0.8rem;
   font-size: 1.2rem;
+  padding-left: 2rem;
 }
 .headerlieu__recherche {
   background-color: #d6d0d0;
@@ -48,7 +54,7 @@ body {
 }
 .intro__btn {
   background: linear-gradient(#FF79DA, #9356DC);
-  border-color: transparent;
+  border-color: linear-gradient(#FF79DA, #9356DC);
   border-radius: 2rem;
   font-size: 1rem;
   margin-top: 2rem;
@@ -58,12 +64,14 @@ body {
   cursor: pointer;
 }
 
+.fonctionnement {
+  height: 22rem;
+}
 .fonctionnement__titre {
   margin-top: 0;
   padding-top: 1rem;
   padding-left: 1rem;
 }
-
 .fonctionnement__liste {
   padding-left: 1rem;
 }
@@ -78,6 +86,16 @@ body {
   width: 95%;
   margin: 2rem 0rem;
 }
+.liste__item--nombre {
+  background-color: #9356DC;
+  color: white;
+  border: 1px solid #9356DC;
+  border-radius: 3rem;
+  width: 1.2rem;
+  display: flex;
+  justify-content: center;
+  margin-left: -0.7rem;
+}
 .liste__item__icone {
   color: gray;
   font-size: 1.2rem;
@@ -87,6 +105,51 @@ body {
   padding-left: 1.5rem;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  height: 90rem;
+}
+.restaurants__titre {
+  margin-top: 0;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.figure__menus {
+  display: block;
+  margin: 0 1rem;
+}
+
+.menus__carte {
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.menus__carte__img {
+  width: 21.4rem;
+  height: 12rem;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.menus__carte__nv {
+  background-color: #99E2D0;
+  color: #1b856c;
+  font-weight: bold;
+  width: 5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0.7rem;
+  top: 0.9rem;
+  border-radius: 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

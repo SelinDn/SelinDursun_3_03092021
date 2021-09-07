@@ -10,6 +10,11 @@ body{
     font-family: $font-texte, $font-titre-logo, sans-serif, Arial;
 }
 
+a{
+    text-decoration: inherit;
+    color: black;
+}
+
 .header{
     text-align: center;
     margin-top: 1rem;
@@ -21,6 +26,7 @@ body{
         &__icone{
             padding-top: 0.8rem;
             font-size: 1.2rem;
+            padding-left: 2rem;
         }
         &__recherche{
             background-color: #d6d0d0;
@@ -53,7 +59,7 @@ body{
     }
     &__btn{
         background:linear-gradient($couleur-secondaire, $couleur-primaire);
-        border-color: transparent;
+        border-color: linear-gradient($couleur-secondaire, $couleur-primaire);
         border-radius: 2rem;
         font-size: 1rem;
         margin-top: 2rem;
@@ -64,14 +70,16 @@ body{
     }
 }
 
-.fonctionnement__titre{
-    margin-top: 0;
-    padding-top: 1rem;
-    padding-left: 1rem;
-}
-
-.fonctionnement__liste{
-    padding-left: 1rem;
+.fonctionnement{
+    height: 22rem;
+    &__titre{
+        margin-top: 0;
+        padding-top: 1rem;
+        padding-left: 1rem; 
+    }
+    &__liste{
+        padding-left: 1rem;
+    }
 }
 
 .liste__item{
@@ -83,6 +91,16 @@ body{
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.30);
     width: 95%;
     margin: 2rem 0rem;
+    &--nombre{
+        background-color: $couleur-primaire;
+        color: white;
+        border: 1px solid $couleur-primaire;
+        border-radius: 3rem;
+        width: 1.2rem;
+        display: flex;
+        justify-content: center;
+        margin-left: -0.7rem;
+    }
     &__icone{
         color: gray;
         font-size: 1.2rem;
@@ -92,5 +110,50 @@ body{
         padding-left: 1.5rem;
         font-size: 1.2rem;
         font-weight: bold;
+    }
+}
+
+.restaurants{
+    background-color: #f6f6f6;
+    height: 90rem;
+    &__titre{
+        margin-top: 0;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    }
+}
+
+.figure__menus{
+    display: block;
+    margin: 0 1rem;
+}
+
+.menus__carte{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.30);
+    position: relative;
+    &__img{
+        width: 21.4rem;
+        height: 12rem;
+        object-fit: cover;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    &__nv{
+        background-color: $couleur-tertiaire;
+        color: #1b856c;
+        font-weight: bold;
+        width: 5rem;
+        height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0.7rem;
+        top: 0.9rem;
+        border-radius: 0.2rem;
     }
 }
