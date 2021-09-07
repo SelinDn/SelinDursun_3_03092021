@@ -109,7 +109,7 @@ a {
 
 .restaurants {
   background-color: #f6f6f6;
-  height: 90rem;
+  padding-bottom: 1rem;
 }
 .restaurants__titre {
   margin-top: 0;
@@ -150,6 +150,57 @@ a {
   right: 0.7rem;
   top: 0.9rem;
   border-radius: 0.2rem;
+}
+.menus__carte__legende {
+  position: relative;
+}
+
+.menus__carte__legende__titre {
+  margin: 0;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.menus__carte__legende__lieu {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  margin: 9px 0px;
+}
+
+.menus__carte__legende__coeur {
+  font-size: 1.2rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 1rem;
+}
+.footer__titre {
+  margin: 0;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  font-family: shrikhand;
+}
+.footer__liste {
+  list-style-type: none;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.liste__lien {
+  margin-bottom: 10px;
+}
+.liste__lien__icone {
+  padding-right: 0.5rem;
+}
+.liste__lien__direction {
+  color: white;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
