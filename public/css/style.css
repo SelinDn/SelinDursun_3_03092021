@@ -1,6 +1,14 @@
-@import '//sass/base/regles';
-@import '//sass/base/regles';
-@import '//sass/base/regles';
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: roboto, shrikhand, sans-serif, Arial;
+}
+
+a {
+  text-decoration: inherit;
+  color: black;
+}
+
 .header {
   text-align: center;
   margin-top: 1rem;
@@ -193,6 +201,17 @@
 .liste__lien__direction {
   color: white;
   font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: roboto, shrikhand, sans-serif, Arial;
+}
+
+a {
+  text-decoration: inherit;
+  color: black;
 }
 
 .header--pg {
