@@ -4,6 +4,8 @@ $couleur-tertiaire:#99E2D0;
 $font-texte:roboto;
 $font-titre-logo:shrikhand;
 
+@import './layout/restaurant';
+
 body{
     margin: 0;
     font-size: 1rem;
