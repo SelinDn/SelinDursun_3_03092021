@@ -1,18 +1,307 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import './base/regles';
- *   |         ^^^^^^^^^^^^^^^
- *   '
- *   sass\layout\_accueil.scss 1:9  @import
- *   sass\main.scss 2:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import './base/regles';\d\a   \2502          ^^^^^^^^^^^^^^^\a   \2575 \a   sass\\layout\\_accueil.scss 1:9  @import\a   sass\\main.scss 2:9             root stylesheet";
+@import '//sass/base/regles';
+@import '//sass/base/regles';
+@import '//sass/base/regles';
+.header {
+  text-align: center;
+  margin-top: 1rem;
 }
+.headerlieu {
+  background-color: #d6d0d0;
+  margin-top: 0.5rem;
+  height: 3rem;
+  box-shadow: 0px 3px 5px #b3b6ba inset;
+}
+.headerlieu__icone {
+  padding-top: 0.8rem;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+}
+.headerlieu__recherche {
+  background-color: #d6d0d0;
+  border: transparent;
+  padding-left: 0.7rem;
+}
+.headerlieu__recherche::placeholder {
+  color: black;
+  font-weight: bold;
+  border: transparent;
+}
+
+.intro {
+  background-color: #f2f2f2;
+  text-align: center;
+  height: 18rem;
+}
+.intro__titre {
+  width: 75%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 3rem;
+}
+.intro__soustitre {
+  width: 75%;
+  margin: auto;
+  padding-top: 1rem;
+}
+.intro__btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-color: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 2rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  color: white;
+  box-shadow: 0px 5px 10px gray;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.fonctionnement {
+  height: 22rem;
+}
+.fonctionnement__titre {
+  margin-top: 0;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.fonctionnement__liste {
+  padding-left: 1rem;
+}
+
+.liste__item {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  height: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 95%;
+  margin: 2rem 0rem;
+}
+.liste__item--nombre {
+  background-color: #9356DC;
+  color: white;
+  border: 1px solid #9356DC;
+  border-radius: 3rem;
+  width: 1.2rem;
+  display: flex;
+  justify-content: center;
+  margin-left: -0.7rem;
+}
+.liste__item__icone {
+  color: gray;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+}
+.liste__item__texte {
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding-bottom: 1rem;
+}
+.restaurants__titre {
+  margin-top: 0;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.figure__menus {
+  display: block;
+  margin: 0 1rem;
+}
+
+.menus__carte {
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.menus__carte__img {
+  width: 21.4rem;
+  height: 12rem;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.menus__carte__nv {
+  background-color: #99E2D0;
+  color: #1b856c;
+  font-weight: bold;
+  width: 5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0.7rem;
+  top: 0.9rem;
+  border-radius: 0.2rem;
+}
+.menus__carte__legende {
+  position: relative;
+}
+
+.menus__carte__legende__titre {
+  margin: 0;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.menus__carte__legende__lieu {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  margin: 9px 0px;
+}
+
+.menus__carte__legende__coeur {
+  font-size: 1.2rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 1rem;
+}
+.footer__titre {
+  margin: 0;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  font-family: shrikhand;
+}
+.footer__liste {
+  list-style-type: none;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.liste__lien {
+  margin-bottom: 10px;
+}
+.liste__lien__icone {
+  padding-right: 0.5rem;
+}
+.liste__lien__direction {
+  color: white;
+  font-weight: bold;
+}
+
+.header--pg {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.header--pg__redirection {
+  display: flex;
+  align-items: center;
+  text-decoration: inherit;
+  color: black;
+}
+.header--pg__logo {
+  order: 2;
+}
+.header--pg__icone {
+  position: absolute;
+  left: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.imgpg {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 0.7rem;
+}
+
+.menupg {
+  background-color: #dfe8e1;
+  position: absolute;
+  width: 100%;
+  margin-top: -3.3rem;
+  border-top-left-radius: 1.7rem;
+  border-top-right-radius: 1.7rem;
+}
+.menupg__conteneur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+.menupg__titre {
+  font-family: shrikhand;
+}
+.menupg__coeur {
+  font-size: 1.2rem;
+}
+
+.section__titre {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: inherit;
+  margin-left: 1rem;
+  border-bottom: 3px #99E2D0 solid;
+  width: 10%;
+  padding-bottom: 0.3rem;
+}
+.section__titre__choix {
+  background-color: #f6f6f6;
+  width: 94%;
+  margin: auto;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 13px gray;
+  padding-bottom: 0.1rem;
+}
+.section__titre__titre {
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.section__titre__description {
+  padding-left: 10px;
+  margin-top: 8px;
+}
+
+.section__choix__prix {
+  position: absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 1rem;
+}
+.footer__titre {
+  margin: 0;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  font-family: shrikhand;
+}
+.footer__liste {
+  list-style-type: none;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.liste__lien {
+  margin-bottom: 10px;
+}
+.liste__lien__icone {
+  padding-right: 0.5rem;
+}
+.liste__lien__direction {
+  color: white;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

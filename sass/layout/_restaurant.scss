@@ -1,4 +1,10 @@
-@import './base/regles';
+@import '//sass/base/regles';
+
+$couleur-primaire:#9356DC;
+$couleur-secondaire:#FF79DA;
+$couleur-tertiaire:#99E2D0;
+$font-texte:roboto;
+$font-titre-logo:shrikhand;
 
 .header--pg{
     margin-top: 1rem;
