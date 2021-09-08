@@ -1,19 +1,4 @@
-$couleur-primaire:#9356DC;
-$couleur-secondaire:#FF79DA;
-$couleur-tertiaire:#99E2D0;
-$font-texte:roboto;
-$font-titre-logo:shrikhand;
-
-body{
-    margin: 0;
-    font-size: 1rem;
-    font-family: $font-texte, $font-titre-logo, sans-serif, Arial;
-}
-
-a{
-    text-decoration: inherit;
-    color: black;
-}
+@import './base/regles';
 
 .header--pg{
     margin-top: 1rem;
