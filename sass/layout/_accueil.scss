@@ -59,7 +59,7 @@ a{
     }
     &__btn{
         background:linear-gradient($couleur-secondaire, $couleur-primaire);
-        border-color: linear-gradient($couleur-secondaire, $couleur-primaire);
+        border: 1px $couleur-primaire solid;
         border-radius: 2rem;
         font-size: 1rem;
         margin-top: 2rem;
