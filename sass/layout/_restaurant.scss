@@ -15,6 +15,7 @@ a{
     color: black;
 }
 
+// ----HEADER PAGE MENU----
 .header--pg{
     margin-top: 1rem;
     display: flex;
@@ -34,7 +35,7 @@ a{
         font-size: 1.2rem;
     }
 }
-
+//----IMG PRINCIPALE----
 .imgpg{
     width: 100%;
     height: 18rem;
@@ -43,7 +44,7 @@ a{
     position: relative;
     z-index: auto;
 }
-
+//----CONTENEUR GLOBAL DU MENU----
 .menupg{
     background-color: #dfe8e1;
     position: relative;
@@ -52,6 +53,7 @@ a{
     margin-top: -3.3rem;
     border-top-left-radius: 1.7rem;
     border-top-right-radius: 1.7rem;
+    //----CONTENEUR DE L'EN-TETE DU MENU----
     &__conteneur{
         display: flex;
         justify-content: space-between;
@@ -65,7 +67,7 @@ a{
         font-size: 1.2rem;
     }
 }
-
+//----TITRES ENTREES/PLATS/DESSERTS----
 .section__titre{
     text-transform: uppercase;
     font-size: 1rem;
@@ -75,7 +77,7 @@ a{
     width: 10%;
     padding-bottom: 0.3rem;
 }
-
+//----CONTENEUR DES ENTREES/PLATS/DESSERTS----
 .section__choix{
     background-color: white;
     width: 94%;
@@ -93,6 +95,10 @@ a{
     &__description{
         padding-left: 10px;
         margin-top: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 17rem;
     }
     &__prix{
         position: absolute;
@@ -100,7 +106,7 @@ a{
         right: 1.5rem;
     }
 }
-
+//----BOUTON COMMANDER----
 .menupg__btn{
     background:linear-gradient($couleur-secondaire, $couleur-primaire);
     border: 1px $couleur-primaire solid;
@@ -115,11 +121,12 @@ a{
     margin-left: 6rem;
     margin-bottom: 3rem;
 }
-   
+//----FOOTER----   
 .footer{
     background-color: #353535;
     color: white;
     padding-bottom: 1rem;
+    //----OHMYFOOD----
     &__titre{
         margin: 0;
         padding-top: 1rem;
@@ -127,13 +134,14 @@ a{
         font-size: 1.5rem;
         font-family: $font-titre-logo;
     }
+    //----UL----
     &__liste{
         list-style-type: none;
         margin-top: 1rem;
         padding-left: 1.5rem;
     }
 }
-
+//----LI DE UL----
 .liste__lien{
     margin-bottom: 10px;
     &__icone{

@@ -89,7 +89,7 @@ a {
 .liste__item--nombre {
   background-color: #9356DC;
   color: white;
-  border: 1px solid #9356DC;
+  border: 1px solid;
   border-radius: 3rem;
   width: 1.2rem;
   display: flex;
@@ -293,6 +293,10 @@ a {
 .section__choix__description {
   padding-left: 10px;
   margin-top: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 17rem;
 }
 .section__choix__prix {
   position: absolute;
