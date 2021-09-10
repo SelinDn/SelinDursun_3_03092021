@@ -1,7 +1,18 @@
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1900px;
   font-size: 1rem;
   font-family: roboto, shrikhand, sans-serif, Arial;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 1.2rem;
+  }
 }
 
 a {
@@ -33,6 +44,7 @@ a {
   color: black;
   font-weight: bold;
   border: transparent;
+  font-size: 1rem;
 }
 
 .intro {
@@ -52,6 +64,16 @@ a {
   margin: auto;
   padding-top: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .intro__soustitre {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .intro__soustitre {
+    font-size: 1.2rem;
+  }
+}
 .intro__btn {
   background: linear-gradient(#FF79DA, #9356DC);
   border: 1px #9356DC solid;
@@ -67,13 +89,37 @@ a {
 .fonctionnement {
   height: 22rem;
 }
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    height: 13rem;
+  }
+}
 .fonctionnement__titre {
   margin-top: 0;
   padding-top: 1rem;
   padding-left: 1rem;
 }
+@media screen and (min-width: 1280px) {
+  .fonctionnement__titre {
+    padding-left: 2rem;
+  }
+}
 .fonctionnement__liste {
   padding-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement__liste {
+    display: flex;
+    width: 95%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .fonctionnement__liste {
+    display: flex;
+    width: 95%;
+    margin: auto;
+  }
 }
 
 .liste__item {
@@ -116,6 +162,27 @@ a {
   padding-top: 1rem;
   padding-left: 1rem;
 }
+@media screen and (min-width: 1280px) {
+  .restaurants__titre {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteneur__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .conteneur__figure {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
 
 .figure__menus {
   display: block;
@@ -129,6 +196,11 @@ a {
   margin-bottom: 1.5rem;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .menus__carte {
+    width: 288px;
+  }
 }
 .menus__carte__img {
   width: 100%;
@@ -179,12 +251,24 @@ a {
   color: white;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
 .footer__titre {
   margin: 0;
   padding-top: 1rem;
   padding-left: 1.5rem;
   font-size: 1.5rem;
   font-family: shrikhand;
+}
+@media screen and (min-width: 768px) {
+  .footer__titre {
+    padding-top: 3rem;
+  }
 }
 .footer__liste {
   list-style-type: none;
@@ -204,7 +288,8 @@ a {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1900px;
   font-size: 1rem;
   font-family: roboto, shrikhand, sans-serif, Arial;
 }
@@ -258,11 +343,34 @@ a {
   align-items: center;
   margin: 0 1.5rem;
 }
+@media screen and (min-width: 1280px) {
+  .menupg__conteneur {
+    justify-content: center;
+  }
+}
 .menupg__titre {
   font-family: shrikhand;
 }
+@media screen and (min-width: 1280px) {
+  .menupg__titre {
+    padding-right: 3rem;
+  }
+}
 .menupg__coeur {
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .conteneur__section {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    width: 30%;
+  }
 }
 
 .section__titre {
@@ -301,6 +409,16 @@ a {
 @media screen and (max-width: 320px) {
   .section__choix__description {
     width: 14rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section__choix__description {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section__choix__description {
+    font-size: 1.2rem;
   }
 }
 .section__choix__prix {
@@ -342,6 +460,16 @@ a {
   list-style-type: none;
   margin-top: 1rem;
   padding-left: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__liste {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__liste {
+    font-size: 1.2rem;
+  }
 }
 
 .liste__lien {

@@ -17,8 +17,15 @@ $breakpoints: (
     }
 }
 
+@mixin ordinateur {
+    @media screen and (min-width:map-get($breakpoints, ordinateur)){
+        @content;
+    }
+}
+
 body{
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1900px;
     font-size: 1rem;
     font-family: $font-texte, $font-titre-logo, sans-serif, Arial;
 }
@@ -72,12 +79,31 @@ a{
         justify-content: space-between;
         align-items: center;
         margin: 0 1.5rem;
+        @include ordinateur{
+            justify-content: center;
+        }
     }
     &__titre{
         font-family: $font-titre-logo;
+        @include ordinateur{
+            padding-right: 3rem;
+        }
     }
     &__coeur{
         font-size: 1.2rem;
+    }
+}
+//----CONTENEUR RESPONSIF SECTION ENTREES/PLATS/DESSERTS----
+.conteneur__section{
+    @include ordinateur{
+        display: flex;
+        justify-content: center;
+    }
+}
+//----BLOCS ENTREES/PLATS/DESSERTS----
+.section{
+    @include ordinateur{
+        width: 30%;
     }
 }
 //----TITRES ENTREES/PLATS/DESSERTS----
@@ -90,7 +116,7 @@ a{
     width: 10%;
     padding-bottom: 0.3rem;
 }
-//----CONTENEUR DES ENTREES/PLATS/DESSERTS----
+//----DIVS DES ENTREES/PLATS/DESSERTS----
 .section__choix{
     background-color: white;
     width: 94%;
@@ -114,6 +140,12 @@ a{
         width: 17rem;
         @include iphone5{
             width: 14rem;
+        }
+        @include tablette{
+            font-size: 1.2rem;
+        }
+        @include ordinateur{
+            font-size: 1.2rem;
         }
     }
     &__prix{
@@ -157,6 +189,12 @@ a{
         list-style-type: none;
         margin-top: 1rem;
         padding-left: 1.5rem;
+        @include tablette{
+            font-size: 1.2rem;
+        }
+        @include ordinateur{
+            font-size: 1.2rem;
+        }
     }
 }
 //----LI DE UL----
