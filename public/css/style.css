@@ -298,6 +298,11 @@ a {
   white-space: nowrap;
   width: 17rem;
 }
+@media screen and (max-width: 320px) {
+  .section__choix__description {
+    width: 14rem;
+  }
+}
 .section__choix__prix {
   position: absolute;
   top: 2.5rem;

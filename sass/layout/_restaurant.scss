@@ -4,6 +4,19 @@ $couleur-tertiaire:#99E2D0;
 $font-texte:roboto;
 $font-titre-logo:shrikhand;
 
+//----MAP BREAKPOINTS----
+$breakpoints: (
+    iphone5:320px,
+    tablette:768px,
+    ordinateur:1280px,
+);
+
+@mixin iphone5 {
+    @media screen and (max-width:map-get($breakpoints, iphone5)){
+        @content;
+    }
+}
+
 body{
     margin: 0;
     font-size: 1rem;
@@ -99,6 +112,9 @@ a{
         text-overflow: ellipsis;
         white-space: nowrap;
         width: 17rem;
+        @include iphone5{
+            width: 14rem;
+        }
     }
     &__prix{
         position: absolute;
