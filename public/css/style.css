@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  max-width: 1900px;
+  max-width: 2300px;
   font-size: 1rem;
   font-family: roboto, shrikhand, sans-serif, Arial;
 }
@@ -85,6 +85,11 @@ a {
   height: 3rem;
   cursor: pointer;
   padding: 0 15px;
+  transition: 0.5s;
+}
+.intro__btn:hover {
+  opacity: 0.9;
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.7);
 }
 
 .fonctionnement__titre {
@@ -214,7 +219,7 @@ a {
   width: 100%;
   height: 12rem;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 65%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
@@ -298,7 +303,7 @@ a {
 
 body {
   margin: 0 auto;
-  max-width: 1900px;
+  max-width: 2300px;
   font-size: 1rem;
   font-family: roboto, shrikhand, sans-serif, Arial;
 }
@@ -340,6 +345,7 @@ a {
 @media screen and (min-width: 1280px) {
   .imgpg {
     height: 25rem;
+    object-position: 50% 60%;
   }
 }
 
@@ -457,6 +463,11 @@ a {
   cursor: pointer;
   width: 10rem;
   margin-bottom: 3rem;
+  transition: 0.5s;
+}
+.menupg__div__btn__btn:hover {
+  opacity: 0.9;
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.7);
 }
 
 .footer {

@@ -25,7 +25,7 @@ $breakpoints: (
 
 body{
     margin: 0 auto;
-    max-width: 1900px;
+    max-width: 2300px;
     font-size: 1rem;
     font-family: $font-texte, $font-titre-logo, sans-serif, Arial;
 }
@@ -66,6 +66,7 @@ a{
     z-index: auto;
     @include ordinateur{
         height: 25rem;
+        object-position: 50% 60%;
     }
 }
 //----CONTENEUR GLOBAL DU MENU----
@@ -173,6 +174,11 @@ a{
         cursor: pointer;
         width: 10rem;
         margin-bottom: 3rem;
+        transition: 0.5s;
+        &:hover{
+            opacity: 0.9;
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.7)
+        }
     }
 }
 //----FOOTER----   
