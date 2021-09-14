@@ -60,13 +60,17 @@ a{
     width: 100%;
     height: 18rem;
     object-fit: cover;
+    object-position: center;
     margin-top: 0.7rem;
     position: relative;
     z-index: auto;
+    @include ordinateur{
+        height: 25rem;
+    }
 }
 //----CONTENEUR GLOBAL DU MENU----
 .menupg{
-    background-color: #dfe8e1;
+    background-color: #f6f6f6;
     position: relative;
     z-index: auto;
     width: 100%;
