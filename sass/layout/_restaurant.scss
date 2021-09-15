@@ -109,6 +109,11 @@ a{
     }
     &__coeur{
         font-size: 1.5rem;
+        @include ordinateur{ 
+            position: absolute;
+            right: 5rem;
+            top: 1.5rem;
+        }
     }
     &__coeur2{
         position: absolute;
@@ -121,6 +126,11 @@ a{
         background-clip: text;
         -webkit-background-clip: text;
         transition: 0.5s;
+        @include ordinateur{
+            position: absolute;
+            right: 5rem;
+            top: 1.5rem;
+        }
         &:hover{
             opacity: 1;
         }

@@ -405,6 +405,13 @@ a {
 .menupg__coeur {
   font-size: 1.5rem;
 }
+@media screen and (min-width: 1280px) {
+  .menupg__coeur {
+    position: absolute;
+    right: 5rem;
+    top: 1.5rem;
+  }
+}
 .menupg__coeur2 {
   position: absolute;
   right: 1.5rem;
@@ -416,6 +423,13 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   transition: 0.5s;
+}
+@media screen and (min-width: 1280px) {
+  .menupg__coeur2 {
+    position: absolute;
+    right: 5rem;
+    top: 1.5rem;
+  }
 }
 .menupg__coeur2:hover {
   opacity: 1;
