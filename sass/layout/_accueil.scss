@@ -272,6 +272,7 @@ a{
         background: linear-gradient($couleur-primaire, $couleur-secondaire);
         opacity: 0;
         color: transparent;
+        background-clip: text;
         -webkit-background-clip: text;
         transition: 0.5s;
         &:hover{

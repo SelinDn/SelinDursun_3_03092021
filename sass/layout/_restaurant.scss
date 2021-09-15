@@ -23,6 +23,19 @@ $breakpoints: (
     }
 }
 
+@keyframes mnapparition {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+
 body{
     margin: 0 auto;
     max-width: 2300px;
@@ -105,6 +118,7 @@ a{
         background: linear-gradient($couleur-primaire, $couleur-secondaire);
         opacity: 0;
         color: transparent;
+        background-clip: text;
         -webkit-background-clip: text;
         transition: 0.5s;
         &:hover{
@@ -145,6 +159,7 @@ a{
     padding-bottom: 0.1rem;
     margin-bottom: 1rem;
     position: relative;
+    animation: mnapparition 2s ease-in-out 0.25s forwards;
     &__titre{
         margin: 0;
         padding-left: 10px;
