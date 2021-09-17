@@ -326,6 +326,26 @@ a {
     transform: translateY(0px);
   }
 }
+@keyframes coche {
+  0% {
+    transform: translateX(20px);
+    opacity: 1;
+    width: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+    width: 5rem;
+  }
+}
+@keyframes prix {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
 body {
   margin: 0 auto;
   max-width: 2300px;
@@ -461,6 +481,7 @@ a {
 .section__choix {
   background-color: white;
   width: 94%;
+  height: 4.5rem;
   margin: auto;
   border-radius: 1rem;
   box-shadow: 3px 3px 13px gray;
@@ -468,6 +489,12 @@ a {
   margin-bottom: 1rem;
   position: relative;
   animation: mnapparition 2s ease-in-out 0.25s forwards;
+}
+.section__choix:hover .section__choix__coche {
+  animation: coche 1.5s ease-in-out 0.5s forwards;
+}
+.section__choix:hover .section__choix__prix {
+  animation: prix 1.1s ease-out 1s forwards;
 }
 .section__choix__titre {
   margin: 0;
@@ -501,6 +528,17 @@ a {
   position: absolute;
   top: 2.5rem;
   right: 1.5rem;
+}
+.section__choix__coche {
+  background: #99E2D0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  opacity: 0;
 }
 
 .menupg__div__btn {
