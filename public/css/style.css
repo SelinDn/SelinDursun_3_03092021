@@ -346,6 +346,14 @@ a {
     transform: translateX(-60px);
   }
 }
+@keyframes coche-icone {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0 auto;
   max-width: 2300px;
@@ -496,6 +504,9 @@ a {
 .section__choix:hover .section__choix__prix {
   animation: prix 1.1s ease-out 1s forwards;
 }
+.section__choix:hover .section__choix__coche__iconediv {
+  animation: coche-icone 1.5s ease-in-out 0.5s forwards;
+}
 .section__choix__titre {
   margin: 0;
   padding-left: 10px;
@@ -539,6 +550,27 @@ a {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__choix__coche__iconediv {
+  background-color: white;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1rem;
+}
+.section__choix__coche__iconediv__icone {
+  color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 .menupg__div__btn {
