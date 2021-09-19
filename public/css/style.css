@@ -354,6 +354,14 @@ a {
     transform: rotate(360deg);
   }
 }
+@keyframes points {
+  0% {
+    width: 17rem;
+  }
+  100% {
+    width: 14rem;
+  }
+}
 body {
   margin: 0 auto;
   max-width: 2300px;
@@ -507,6 +515,9 @@ a {
 .section__choix:hover .section__choix__coche__iconediv {
   animation: coche-icone 1.5s ease-in-out 0.5s forwards;
 }
+.section__choix:hover .section__choix__description {
+  animation: points 1.5s ease-in-out 0.75s forwards;
+}
 .section__choix__titre {
   margin: 0;
   padding-left: 10px;
@@ -528,6 +539,7 @@ a {
 @media screen and (min-width: 768px) {
   .section__choix__description {
     font-size: 1.2rem;
+    overflow: initial;
   }
 }
 @media screen and (min-width: 1280px) {

@@ -71,6 +71,16 @@ $breakpoints: (
     }
 }
 
+@keyframes points {
+    0%{
+        width: 17rem;
+    }
+    
+    100%{
+        width: 14rem;
+    }
+}
+
 body{
     margin: 0 auto;
     max-width: 2300px;
@@ -216,6 +226,9 @@ a{
         .section__choix__coche__iconediv{
             animation: coche-icone 1.5s ease-in-out 0.5s forwards;
         }
+        .section__choix__description{
+            animation: points 1.5s ease-in-out 0.75s forwards;
+        }
     }
     &__titre{
         margin: 0;
@@ -234,6 +247,7 @@ a{
         }
         @include tablette{
             font-size: 1.2rem;
+            overflow: initial;
         }
         @include ordinateur{
             font-size: 1.2rem;
