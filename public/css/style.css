@@ -362,6 +362,14 @@ a {
     width: 14rem;
   }
 }
+@keyframes ptsiphone5 {
+  0% {
+    width: 14rem;
+  }
+  100% {
+    width: 10rem;
+  }
+}
 body {
   margin: 0 auto;
   max-width: 2300px;
@@ -515,13 +523,21 @@ a {
 .section__choix:hover .section__choix__coche__iconediv {
   animation: coche-icone 1.5s ease-in-out 0.5s forwards;
 }
-.section__choix:hover .section__choix__description {
+.section__choix:hover .section__choix__description, .section__choix:hover .section__choix__titre {
   animation: points 1.5s ease-in-out 0.75s forwards;
+}
+@media screen and (max-width: 320px) {
+  .section__choix:hover .section__choix__description, .section__choix:hover .section__choix__titre {
+    animation: ptsiphone5 1.5s ease-in-out 0.75s forwards;
+  }
 }
 .section__choix__titre {
   margin: 0;
   padding-left: 10px;
   padding-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .section__choix__description {
   padding-left: 10px;
