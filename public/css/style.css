@@ -16,6 +16,12 @@
     text-shadow: 0 0 7px #9356DC;
   }
 }
+@keyframes loaderdisparition {
+  100% {
+    z-index: -1000;
+    opacity: 0;
+  }
+}
 body {
   margin: 0 auto;
   max-width: 2300px;
@@ -48,6 +54,7 @@ a {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 1000;
+  animation: loaderdisparition 3.5s ease-in-out 3.1s forwards;
 }
 .loader__lettre {
   color: #9356DC;
@@ -234,6 +241,16 @@ a {
   color: gray;
   font-size: 1.2rem;
   padding-left: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .liste__item__icone {
+    padding-left: 7rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .liste__item__icone {
+    padding-left: 3rem;
+  }
 }
 .liste__item__texte {
   padding-left: 1.5rem;
