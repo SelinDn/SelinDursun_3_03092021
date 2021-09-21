@@ -170,7 +170,7 @@ a {
     top: 1.5rem;
   }
 }
-.menupg__coeur::hover {
+.menupg__coeur:hover {
   opacity: 0;
 }
 .menupg__coeur2 {
