@@ -9,6 +9,7 @@ $breakpoints: (
     iphone5:320px,
     tablette:768px,
     ordinateur:1280px,
+    L-ordinateur:1695px
 );
 
 @mixin iphone5 {
@@ -25,6 +26,12 @@ $breakpoints: (
 
 @mixin ordinateur {
     @media screen and (min-width:map-get($breakpoints, ordinateur)){
+        @content;
+    }
+}
+
+@mixin L-ordinateur {
+    @media screen and (min-width:map-get($breakpoints, L-ordinateur)){
         @content;
     }
 }
@@ -269,6 +276,9 @@ a{
         padding-left: 1.5rem;
         font-size: 1.2rem;
         font-weight: bold;
+        @include L-ordinateur{
+            padding-left: 3rem;
+        }
     }
 }
 //----SECTION DES RESTAURANTS----
@@ -368,7 +378,7 @@ a{
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
-        transition: 0.5s;
+        transition: 1.5s;
         &:hover{
             opacity: 1;
         }

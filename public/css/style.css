@@ -257,6 +257,11 @@ a {
   font-size: 1.2rem;
   font-weight: bold;
 }
+@media screen and (min-width: 1695px) {
+  .liste__item__texte {
+    padding-left: 3rem;
+  }
+}
 
 .restaurants {
   background-color: #f6f6f6;
@@ -361,7 +366,7 @@ a {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  transition: 0.5s;
+  transition: 1.5s;
 }
 .menus__carte__legende__coeur2:hover {
   opacity: 1;
@@ -561,7 +566,7 @@ a {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  transition: 0.5s;
+  transition: 1.5s;
 }
 @media screen and (min-width: 1280px) {
   .menupg__coeur2 {
@@ -634,6 +639,11 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+@media screen and (min-width: 1695px) {
+  .section__choix__titre {
+    overflow: initial;
+  }
+}
 .section__choix__description {
   padding-left: 10px;
   margin-top: 8px;
@@ -657,6 +667,11 @@ a {
   .section__choix__description {
     font-size: 1.2rem;
     overflow: hidden;
+  }
+}
+@media screen and (min-width: 1695px) {
+  .section__choix__description {
+    overflow: initial;
   }
 }
 .section__choix__prix {
