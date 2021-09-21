@@ -1,0 +1,94 @@
+//--------MES KEYFRAMES--------
+//----APPARITION DES MENUS----
+@keyframes mnapparition {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+//----APPARITION DE LA COCHE----
+@keyframes coche {
+    0%{
+        transform: translateX(0px);
+        opacity: 1;
+        width: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+        width: 5rem;
+    }
+}
+//----POUSSER LE PRIX----
+@keyframes prix {
+    0%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(-60px);
+    }
+}
+//----ICONE DE LA COCHE----
+@keyframes coche-icone {
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+//----ROGNER LE TEXTE----
+@keyframes points {
+    0%{
+        width: 17rem;
+    }
+    
+    100%{
+        width: 14rem;
+    }
+}
+@keyframes ptsiphone5 {
+    0%{
+        width: 14rem;
+    }
+
+    100%{
+        width: 10rem;
+    }
+}
+//----POUR LE LOADER----
+@keyframes loader {
+    0%{
+        color: $couleur-primaire;
+        text-shadow: 0 0 7px $couleur-primaire;
+    }
+
+    40%{
+        color: $couleur-tertiaire;
+        text-shadow: 0 0 7px $couleur-tertiaire;
+    }
+
+    80%{
+        color: $couleur-secondaire;
+        text-shadow: 0 0 7px $couleur-secondaire;
+    }
+
+    100%{
+        color: $couleur-primaire;
+        text-shadow: 0 0 7px $couleur-primaire; 
+    }
+}
+@keyframes loaderdisparition {
+    100%{
+        z-index: -1000;
+        opacity: 0;
+    }
+}

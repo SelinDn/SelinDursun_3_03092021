@@ -1,0 +1,52 @@
+//----MON LOADER----
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0,0%,100%,.9);
+    z-index: 1000;
+    animation: loaderdisparition 3.5s ease-in-out 3.1s forwards;
+    &__lettre{
+        color: $couleur-primaire;
+        font-size: 2.5rem;
+        letter-spacing: 0.9rem;
+        animation: loader 3s linear 0.1s infinite;
+        &:nth-child(1){
+            animation-delay: 0.25s;
+        }
+        &:nth-child(2){
+            animation-delay: 0.45s;
+        }
+        &:nth-child(3){
+            animation-delay: 0.65s;
+        }
+        &:nth-child(4){
+            animation-delay: 0.85s;
+        }
+        &:nth-child(5){
+            animation-delay: 1.05s;
+        }
+        &:nth-child(6){
+            animation-delay: 1.25s;
+        }
+        &:nth-child(7){
+            animation-delay: 1.45s;
+        }
+        &:nth-child(8){
+            animation-delay: 1.65s;
+        }
+        @include iphone5{
+            font-size: 2rem;
+        }
+        @include tablette{
+            font-size: 4rem;
+        }
+        @include ordinateur{
+            font-size: 7rem;
+        }
+    }
+}

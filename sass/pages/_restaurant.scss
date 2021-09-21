@@ -1,0 +1,166 @@
+//--------PAGE RESTAURANT--------
+//----IMG PRINCIPALE----
+.imgpg{
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 0.7rem;
+    position: relative;
+    z-index: auto;
+    @include ordinateur{
+        height: 25rem;
+        object-position: 50% 60%;
+    }
+}
+//----CONTENEUR GLOBAL DU MENU----
+.menupg{
+    background-color: #f6f6f6;
+    position: relative;
+    z-index: auto;
+    width: 100%;
+    margin-top: -3.3rem;
+    border-top-left-radius: 1.7rem;
+    border-top-right-radius: 1.7rem;
+    //----CONTENEUR DE L'EN-TETE DU MENU----
+    &__conteneur{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1.5rem;
+        @include ordinateur{
+            justify-content: center;
+        }
+    }
+    &__titre{
+        font-family: $font-titre-logo;
+        @include ordinateur{
+            padding-right: 3rem;
+        }
+    }
+}
+//----CONTENEUR RESPONSIF SECTION ENTREES/PLATS/DESSERTS----
+.conteneur__section{
+    @include ordinateur{
+        display: flex;
+        justify-content: center;
+    }
+}
+//----BLOCS ENTREES/PLATS/DESSERTS----
+.section{
+    @include ordinateur{
+        width: 30%;
+    }
+}
+//----TITRES ENTREES/PLATS/DESSERTS----
+.section__titre{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: inherit;
+    margin-left: 1rem;
+    border-bottom: 3px $couleur-tertiaire solid;
+    width: 10%;
+    padding-bottom: 0.3rem;
+}
+//----DIVS DES ENTREES/PLATS/DESSERTS----
+.section__choix{
+    background-color: white;
+    width: 94%;
+    height: 4.5rem;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 13px gray;
+    padding-bottom: 0.1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    animation: mnapparition 2s ease-in-out 0.25s forwards;
+    &:hover{
+        .section__choix__coche{ 
+            animation: coche 1.5s ease-in-out 0.5s forwards;
+        }
+        .section__choix__prix{ 
+            animation: prix 1.1s ease-out 1s forwards;
+        }
+        .section__choix__coche__iconediv{
+            animation: coche-icone 1.5s ease-in-out 0.5s forwards;
+        }
+        .section__choix__description, .section__choix__titre{
+            animation: points 1.5s ease-in-out 0.75s forwards;
+        }
+        @include iphone5{
+            .section__choix__description, .section__choix__titre{ 
+                animation: ptsiphone5 1.5s ease-in-out 0.75s forwards;
+            }
+        }
+    }
+    &__titre{
+        margin: 0;
+        padding-left: 10px;
+        padding-top: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        @include L-ordinateur{
+            overflow: initial;
+        }
+    }
+    &__description{
+        padding-left: 10px;
+        margin-top: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 17rem;
+        @include iphone5{
+            width: 14rem;
+        }
+        @include tablette{
+            font-size: 1.2rem;
+            overflow: initial;
+        }
+        @include ordinateur{
+            font-size: 1.2rem;
+            overflow: hidden;
+        }
+        @include L-ordinateur{
+            overflow: initial;
+        }
+    }
+    &__prix{
+        position: absolute;
+        top: 2.5rem;
+        right: 1.5rem;
+    }
+    &__coche{
+        background: $couleur-tertiaire;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+//----DIV DE L'ICONE DE LA COCHE----
+.section__choix__coche__iconediv{
+    background-color: white;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+    &__icone{
+        color: $couleur-tertiaire;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+}

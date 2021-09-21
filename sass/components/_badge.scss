@@ -1,0 +1,15 @@
+//----BADGE NOUVEAU SUR LES CARTES----
+.menus__carte__nv{
+    background-color: $couleur-tertiaire;
+    color: #1b856c;
+    font-weight: bold;
+    width: 5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0.7rem;
+    top: 0.9rem;
+    border-radius: 0.2rem;
+}

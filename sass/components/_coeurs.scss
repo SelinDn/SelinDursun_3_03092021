@@ -1,0 +1,55 @@
+//--------ICONES COEUR--------
+//----COEUR DES FIGCAPTIONS PG ACCUEIL----
+.menus__carte__legende__coeur{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    &2{
+        font-size: 1.5rem;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem; 
+        background: linear-gradient($couleur-primaire, $couleur-secondaire);
+        opacity: 0;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        transition: 1.5s;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+//----COEUR DES PGS RESTAURANTS----
+.menupg__coeur{
+    font-size: 1.5rem;
+    @include ordinateur{ 
+        position: absolute;
+        right: 5rem;
+        top: 1.5rem;
+    }
+    &::hover{
+        opacity: 0;
+    }
+    &2{
+        position: absolute;
+        right: 1.5rem;
+        top: 1.6rem;
+        font-size: 1.5rem;
+        background: linear-gradient($couleur-primaire, $couleur-secondaire);
+        opacity: 0;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        transition: 1.5s;
+        @include ordinateur{
+            position: absolute;
+            right: 5rem;
+            top: 1.5rem;
+        }
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

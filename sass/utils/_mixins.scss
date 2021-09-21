@@ -1,0 +1,21 @@
+//----MIXINS BREAKPOINTS----
+@mixin iphone5 {
+    @media screen and (max-width:map-get($breakpoints, iphone5)){
+        @content;
+    }
+}
+@mixin tablette {
+    @media screen and (min-width:map-get($breakpoints, tablette)){
+        @content;
+    }
+}
+@mixin ordinateur {
+    @media screen and (min-width:map-get($breakpoints, ordinateur)){
+        @content;
+    }
+}
+@mixin L-ordinateur {
+    @media screen and (min-width:map-get($breakpoints, L-ordinateur)){
+        @content;
+    }
+}

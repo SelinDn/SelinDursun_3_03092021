@@ -1,0 +1,45 @@
+//----MON FOOTER----
+.footer{
+    background-color: #353535;
+    color: white;
+    padding-bottom: 1rem;
+    @include tablette{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+    //----OHMYFOOD----
+    &__titre{
+        margin: 0;
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+        font-size: 1.5rem;
+        font-family: $font-titre-logo;
+        @include tablette{
+            padding-top: 3rem;
+        }
+    }
+    //----UL----
+    &__liste{
+        list-style-type: none;
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+        @include tablette{
+            font-size: 1.2rem;
+        }
+        @include ordinateur{
+            font-size: 1.2rem;
+        }
+    }
+}
+//----LI DE UL----
+.liste__lien{
+    margin-bottom: 10px;
+    &__icone{
+        padding-right: 0.5rem;
+    }
+    &__direction{
+        color: white;
+        font-weight: bold;
+    }
+}

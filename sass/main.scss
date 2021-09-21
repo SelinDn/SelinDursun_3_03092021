@@ -1,9 +1,13 @@
-@import './layout/accueil';
-@import './layout/restaurant';
-
-
-
-
-
-
-
+@import './utils/variables';
+@import './utils/map';
+@import './utils/mixins';
+@import './utils/keyframes';
+@import './base/reset';
+@import './components/buttons';
+@import './components/coeurs';
+@import './components/loader';
+@import './components/badge';
+@import './layout/header';
+@import './layout/footer';
+@import './pages/accueil';
+@import './pages/restaurant';
