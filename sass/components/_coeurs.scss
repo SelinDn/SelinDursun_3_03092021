@@ -43,6 +43,11 @@
         background-clip: text;
         -webkit-background-clip: text;
         transition: 1.5s;
+        @include tablette{
+            position: absolute;
+            right: 1.5rem;
+            top: 2.1rem;
+        }
         @include ordinateur{
             position: absolute;
             right: 5rem;

@@ -185,6 +185,13 @@ a {
   -webkit-background-clip: text;
   transition: 1.5s;
 }
+@media screen and (min-width: 768px) {
+  .menupg__coeur2 {
+    position: absolute;
+    right: 1.5rem;
+    top: 2.1rem;
+  }
+}
 @media screen and (min-width: 1280px) {
   .menupg__coeur2 {
     position: absolute;
@@ -661,6 +668,11 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+@media screen and (min-width: 768px) {
+  .section__choix__titre {
+    overflow: initial;
+  }
 }
 @media screen and (min-width: 1695px) {
   .section__choix__titre {
