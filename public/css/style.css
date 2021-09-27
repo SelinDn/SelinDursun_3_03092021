@@ -470,11 +470,6 @@ a {
   font-size: 1.2rem;
   padding-left: 2rem;
 }
-@media screen and (min-width: 768px) {
-  .liste__item__icone {
-    padding-left: 7rem;
-  }
-}
 @media screen and (min-width: 1280px) {
   .liste__item__icone {
     padding-left: 3rem;
