@@ -211,7 +211,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   z-index: 1000;
   animation: loaderdisparition 3.5s ease-in-out 3.1s forwards;
 }
@@ -274,6 +274,13 @@ a {
   right: 0.7rem;
   top: 0.9rem;
   border-radius: 0.2rem;
+  padding: 0.1rem;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 1280px) {
+  .menus__carte__nv {
+    padding: 0.2rem;
+  }
 }
 
 .header {
@@ -464,6 +471,13 @@ a {
   display: flex;
   justify-content: center;
   margin-left: -0.7rem;
+  padding: 0.2rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .liste__item--nombre {
+    width: 1.4rem;
+  }
 }
 .liste__item__icone {
   color: gray;
