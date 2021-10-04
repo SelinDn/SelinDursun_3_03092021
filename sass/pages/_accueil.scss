@@ -62,12 +62,22 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.30);
     width: 95%;
     margin: 2rem 0rem;
+    :hover{
+        background-color: #e4d5f6;
+    }
     @include tablette{
         width: 45%;
         margin: auto;
     }
     @include ordinateur{
         width: 25%;
+    }
+    &__conteneur{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: baseline;
+        border-radius: 1rem;
     }
     &--nombre{
         background-color: $couleur-primaire;

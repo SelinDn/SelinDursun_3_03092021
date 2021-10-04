@@ -31,9 +31,11 @@
 @keyframes coche-icone {
   0% {
     transform: rotate(0);
+    opacity: 0;
   }
   100% {
     transform: rotate(360deg);
+    opacity: 1;
   }
 }
 @keyframes points {
@@ -451,6 +453,9 @@ a {
   width: 95%;
   margin: 2rem 0rem;
 }
+.liste__item :hover {
+  background-color: #e4d5f6;
+}
 @media screen and (min-width: 768px) {
   .liste__item {
     width: 45%;
@@ -461,6 +466,13 @@ a {
   .liste__item {
     width: 25%;
   }
+}
+.liste__item__conteneur {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: baseline;
+  border-radius: 1rem;
 }
 .liste__item--nombre {
   background-color: #9356DC;
