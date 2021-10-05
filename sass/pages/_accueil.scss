@@ -64,6 +64,9 @@
     margin: 2rem 0rem;
     :hover{
         background-color: #e4d5f6;
+        .liste__item__icone{
+            color: #9356DC;
+        }
     }
     @include tablette{
         width: 45%;

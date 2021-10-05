@@ -456,6 +456,9 @@ a {
 .liste__item :hover {
   background-color: #e4d5f6;
 }
+.liste__item :hover .liste__item__icone {
+  color: #9356DC;
+}
 @media screen and (min-width: 768px) {
   .liste__item {
     width: 45%;
